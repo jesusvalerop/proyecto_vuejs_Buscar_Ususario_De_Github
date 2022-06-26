@@ -79,7 +79,7 @@ export default {
             })
             .then(response => response.json())
             .then(data => {
-                console.log(data.message);
+                //console.log(data.message);
                 if(data.message != 'Not Found'){
                     this.userData = data;
                     this.userValid = true;
@@ -90,7 +90,7 @@ export default {
                 }  
             })
             .catch(error => {
-                console.log(error);
+                //console.log(error);
             })
             .finally(()=>{
                 this.desInput = false;
@@ -127,11 +127,11 @@ export default {
             .then(response => response.json())
             .then(data => {
                 this.listRepos = data;
-                console.log(this.listRepos);
+                //console.log(this.listRepos);
                 this.mosRepo = true;
             })
             .catch(error => {
-                console.log(error);
+                //console.log(error);
             });
            
 
