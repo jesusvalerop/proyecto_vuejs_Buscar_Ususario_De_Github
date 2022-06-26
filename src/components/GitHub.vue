@@ -89,9 +89,9 @@ export default {
                     this.errorUser = true;
                 }  
             })
-            .catch(error => {
+            //.catch(error => {
                 //console.log(error);
-            })
+            //})
             .finally(()=>{
                 this.desInput = false;
             });
@@ -130,9 +130,9 @@ export default {
                 //console.log(this.listRepos);
                 this.mosRepo = true;
             })
-            .catch(error => {
+            //.catch(error => {
                 //console.log(error);
-            });
+            //});
            
 
             // Obtener datos de autenticación de usuario para hacer peticiones
